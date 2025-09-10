@@ -1,0 +1,8 @@
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\bin\Debug\OOPAlapok.exe.config
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\bin\Debug\OOPAlapok.exe
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\bin\Debug\OOPAlapok.pdb
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\obj\Debug\OOPAlapok.csproj.AssemblyReference.cache
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\obj\Debug\OOPAlapok.csproj.CoreCompileInputs.cache
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\obj\Debug\OOPAlapok.exe
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\obj\Debug\OOPAlapok.pdb
+C:\Users\siposz\Gitwork\OOPAlapok\OOPAlapok\obj\Debug\OOPAlapok.exe.config
