@@ -22,6 +22,11 @@ namespace OOPAlapok
             get { return kor; }
             set { kor = value; }
         }
+
+        public override string ToString()
+        {
+            return $"A személy neve {nev} és életkora {kor}";
+        }
     }
     internal class Program
     {
@@ -29,9 +34,11 @@ namespace OOPAlapok
         {
             Szemely tanulo1 = new Szemely();
             tanulo1.Nev = "Gábor";
-            Console.WriteLine(tanulo1.Nev);
             tanulo1.Kor = 23;
-            Console.WriteLine(tanulo1.Kor);
+
+            Console.WriteLine(tanulo1);
+
+            
         }
     }
 }
