@@ -81,6 +81,12 @@ namespace OOPAlapok
             nev = string.Empty;
         }
     }
+    public class Dolgozo : Szemely
+    {
+        private int Ber;
+
+
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -90,14 +96,34 @@ namespace OOPAlapok
             tanulo1.Kor = 23;
 
             Console.WriteLine(tanulo1);
-
+            Console.WriteLine("---------------------------------------");
             Bankszamla bankszamla1 = new Bankszamla();
             bankszamla1.Egyenleg = 5700;
             Console.WriteLine(bankszamla1.Egyenleg);
-
+            Console.WriteLine("---------------------------------------");
             Hallgato hallgato1 = new Hallgato();
             hallgato1.Neptunkod = "MHWLN9";
             Console.WriteLine($"{hallgato1.Neptunkod}");
+            Console.WriteLine("---------------------------------------");
+            List<Hallgato> hallgatok = new List<Hallgato>();
+
+            for (int i = 0; i < 2; i++)
+            {
+                Hallgato hallgato = new Hallgato();
+                Console.WriteLine($"Kérem az {i + 1} hallgato nevét");
+                hallgato.Nev = Console.ReadLine();
+                Console.WriteLine($"Kérem az {i + 1} hallgato életkorát");
+                hallgato.Kor = int.Parse(Console.ReadLine());
+                Console.WriteLine($"Kérem az {i + 1} hallgato neptunkódját");
+                hallgato.Neptunkod = Console.ReadLine();
+                hallgatok.Add(hallgato);
+            }
+            Console.WriteLine("Hallgatók neve: ");
+            foreach (var item in hallgatok)
+            {
+                Console.WriteLine($"A hallgatók neve: {item.Nev}");
+            }
+            Console.WriteLine("---------------------------------------");
         }
     }
 }
