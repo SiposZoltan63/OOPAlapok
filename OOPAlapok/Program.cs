@@ -59,7 +59,23 @@ namespace OOPAlapok
     }
     public class Hallgato : Szemely
     {
-        private int neptunkod;
+        private string neptunkod;
+
+        public string Neptunkod
+        {
+            get { return neptunkod; }
+            set 
+            {
+                if (value.Length <= 6)
+                {
+                    neptunkod = value;
+                }
+                else 
+                {
+                    Console.WriteLine("Nem megfelelő hosszúság");
+                }
+            }
+        }
         public void kiir()
         {
             nev = string.Empty;
@@ -79,6 +95,9 @@ namespace OOPAlapok
             bankszamla1.Egyenleg = 5700;
             Console.WriteLine(bankszamla1.Egyenleg);
 
+            Hallgato hallgato1 = new Hallgato();
+            hallgato1.Neptunkod = "MHWLN9";
+            Console.WriteLine($"{hallgato1.Neptunkod}");
         }
     }
 }
